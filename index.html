@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Speed Test - Ngerank</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Page Speed Test</h1>
+        <input type="text" id="urlInput" placeholder="Enter URL (https://...)">
+        <button onclick="testPageSpeed()">Test Page Speed</button>
+
+        <div class="output" id="outputSection" style="display:none;">
+            <h2>Result:</h2>
+            <p id="loadTime"></p>
+            <p id="scoreResult"></p>
+        </div>
+
+        <iframe id="testFrame" class="test-frame"></iframe>
+    </div>
+
+    <footer style="text-align:center; margin-top:2rem; font-size:0.9rem;">
+        Built by <a href="https://ngerank.id" target="_blank" style="color:#FFD166; text-decoration:none;">Ngerank</a> — Built to Rank.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
